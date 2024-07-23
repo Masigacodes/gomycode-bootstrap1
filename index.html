@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fictional restaurant</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for social media icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero {
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: blue;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+      .hero h1 {
+        font-size: 3em;
+      }
+      .hero .btn {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">PULSE PLACE</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <img src="./images/delicious-meal.png" alt="delicious-meal" />
+    <section class="hero" style="background-image: >
+      <div class="container text-center">
+        <h1>Welcome to Our Restaurant</h1>
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container my-5">
+      <h2 class="text-center mb-4">Our Menu</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="tom-yum.jpg" class="card-img-top" alt="tom-yum" />
+            <div class="card-body">
+              <h5 class="card-title">Tom Yum</h5>
+              <p class="card-text">
+                is a clear soup with an intensely sour and spicy flavour. It is
+                made by combining lemongrass, lime leaves and galangal. A
+                portion of meat or fish can also be added, while mushrooms are
+                also a popular choice. All of this is flavoured with fish sauce,
+                lime juice and chilli peppers.
+              </p>
+              <p class="card-text"><strong>$10.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="confit-de-canard.jpg"
+              class="card-img-top"
+              alt="confit-de-canard"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Confit de Canard</h5>
+              <p class="card-text">
+                Confit de canard is a French delicacy made from salt-cured duck
+                legs and then cooked and preserved in duck fat. Confit involves
+                pre-cooking the meat then preserving it in fat, most commonly
+                duck or goose fat.
+              </p>
+              <p class="card-text"><strong>$12.00</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="sushi.jpg" class="card-img-top" alt="sushi" />
+            <div class="card-body">
+              <h5 class="card-title">Sushi</h5>
+              <p class="card-text">
+                Sushi is a Japanese dish that features medium-grained rice
+                cooked in vinegar, served with raw or cooked seafood and a
+                variety of toppings or fillings. Contrary to popular belief,
+                rice is the main component of sushi, not raw fish.
+              </p>
+              <p class="card-text"><strong>$15.00</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="restaurant.jpg" alt="About Us" />
+        </div>
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>
+            Pulse Place was opened on Thanksgiving Day 1990. Chef / Owner Ron
+            Silver began baking pies and selling them to restaurants and his
+            neighbors out of a small kitchen at the corner of Hudson and North
+            Moore St. in Tribeca. Today, NYC’s beloved restaurant and pie shop
+            celebrates 27 years of classic, made from scratch American cooking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <p>&copy; 2024 PULSE PLACE</p>
+      <div>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
